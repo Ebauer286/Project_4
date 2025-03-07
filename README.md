@@ -67,6 +67,7 @@ TECHNOLOGIES USED
   *Pandas
   *SKLearn
   *Random Forest Classifier
+  *K-Nearest Neighbor 
   *Jupyter Notebook
 
   ---
