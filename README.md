@@ -69,7 +69,8 @@ TECHNOLOGIES USED
   *Random Forest Classifier
   *K-Nearest Neighbor 
   *Jupyter Notebook
-
+  *MongoDB
+  *NoSQL
   ---
 
   CONCLUSIONS
