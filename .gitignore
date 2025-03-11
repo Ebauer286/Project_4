@@ -1,4 +1,7 @@
 .DS_Store
+MushroomDataset/
+trained_models/
+trained_scalers/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
