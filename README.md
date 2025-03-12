@@ -9,7 +9,7 @@ This repository contains a Supervised Machine Learning solution utilizing the "S
 
 DATASET 
 
-The analysis uses a dataset of  61,069 rows of simulated mushroom data. This data set was obtained from UC Irving (https://archive.ics.uci.edu/dataset/848/secondary+mushroom+dataset). The dataset includes metadata columns such as:
+The analysis uses a dataset of  61,069 rows of simulated mushroom data. This data set was obtained from UC Irvine (https://archive.ics.uci.edu/dataset/848/secondary+mushroom+dataset). The dataset includes metadata columns such as:
   *cap-diameter
   *cap-shape
   *does-bruise-bleed
