@@ -3,6 +3,10 @@ PROJECT 4 - EDIBLE VS POISONOUS MUSHROOM CLASSIFICATION
 ---
 
 REPOSITORY Guide:
+1) Data used to train and test the classifiers can be found at MushroomDataset/secondary_data.csv.
+2) To instantiate and populate a NoSQL database using MongoDB and Pymongo, run populate_db.py.
+3) Preprocessing, training and evaluation of the KNN model is stored in KNN_model_complete.ipynb.
+4)  Preprocessing, training and evaluation of the Random Forest model is stored in RandomForest_model_complete.ipynb.
 
 ---
 
