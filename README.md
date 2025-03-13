@@ -12,7 +12,7 @@ REPOSITORY Guide:
 
 PROJECT OVERVIEW
 
-Objective: train a machine learning model to classify mushrooms as either poisonous or edible.
+Objective: train machine learning models to classify mushrooms as either poisonous or edible.
 
 The project utilized both K-nearest neighbor (KNN) and Random Forest algorithms for classification.
 
