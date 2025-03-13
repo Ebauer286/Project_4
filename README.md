@@ -36,17 +36,20 @@ per species). This dataset was created by D. Wagner, D. Heider and G. Hattab, an
 
 METHODOLOGY
 
-The project follows these key steps:
+The project follows these key steps (Note: the preprocessing, model training and evaluation follows the same steps for both the KNN and Random Forest models):
+1. Create and populate a noSQL database, using MongoDB and Pymongo
+2. Generate data frame with all records from database.
+3. Remove al columns with empty values.
+4. Split the data into training and testing batches.
+5. Scale the training and test features.
+6. Train the model using scaled training batch.
+7. Generate predictions using the test batch.
+8. Evaluate the model, looking at accuracy, precision and recall.
+9. Return to the preprocessing stage to optimize the training data.
+10. Starting with the complete raw data, fill all empty values (in all columns) with 'n/a' string value, to create a new distinct categorical value. No columns are dropped.
+11. Repeat steps 4 to 8. 
 
-1. DATA MODEL IMPLEMENTATION
-   *A Python script initializes, trains, and evaluates a model
-   *The data is cleaned, normalized, and standardized prior to modeling
-   *The model utilizes data retrieved from SQL or Spark
-   *The model demonstrates meaningful predictive power at least 75% classification accuracy or 0.80 R-squared.
 
-2. DATA MODEL OPTIMIZATION
-   *The model optimization and evaluation process showing iterative changes made to the model and the resulting changes in model performance is documented in either a CSV/Excel table or in the Python script itself
-   *Overall model performance is printed or displayed at the end of the script
    
 ---
 
