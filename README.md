@@ -3,35 +3,30 @@ PROJECT 4 - EDIBLE VS POISONOUS MUSHROOM CLASSIFICATION
 ---
 
 PROJECT OVERVIEW
-This repository contains a Supervised Machine Learning solution utilizing the "Secondary Mushroom" dataset to classify mushrooms into an edible or poisonous classification.  
+
+Objective: train a machine learning model to classify mushrooms as either poisonous or edible.
+
+The project utilized both K-nearest neighbor (KNN) and Random Forest algorithms for classification.
 
 ---
 
 DATASET 
 
-The analysis uses a dataset of  61,069 rows of simulated mushroom data. This data set was obtained from UC Irvine (https://archive.ics.uci.edu/dataset/848/secondary+mushroom+dataset). The dataset includes metadata columns such as:
-  *cap-diameter
-  *cap-shape
-  *does-bruise-bleed
-  *gill-attachment
-  *gill-spacing
-  *gill-color
-  *stem-height
-  *stem_width
-  *stem-root
-  *stem-surface
-  *stem-color
-  *veil-type
-  *veil-color
-  *has-ring
-  *ring-type
-  *spore-print-color
-  *habitat
-  *seasons
+This dataset includes 61069 hypothetical mushrooms with caps based on 173 species (353 mushrooms
+per species). This dataset was created by D. Wagner, D. Heider and G. Hattab, and obtained from UC Irvine's Machine Learning Repository (https://archive.ics.uci.edu/dataset/848/secondary+mushroom+dataset). The dataset includes metadata columns such as:
+  * cap-diameter
+  * cap-shape
+  * does-bruise-bleed
+  * gill-attachment
+  * gill-spacing
+  * gill-color
+  * stem-height
+
 
 ---
 
-REPOSITORY STRUCTURE
+REPOSITORY Guide:
+
 
 
 
@@ -63,12 +58,12 @@ RESULTS
 ---
 
 TECHNOLOGIES USED
-  *Python
-  *Pandas
-  *SKLearn
-  *Random Forest Classifier
-  *K-Nearest Neighbor 
-  *Jupyter Notebook
+  * Python
+  * Pandas
+  * SKLearn: Random Forest Classifier
+  * SKLearn: K-Nearest Neighbor 
+  * Jupyter Notebook
+* MongoDB
 
   ---
 
