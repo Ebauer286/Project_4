@@ -2,38 +2,33 @@ PROJECT 4 - EDIBLE VS POISONOUS MUSHROOM CLASSIFICATION
 
 ---
 
+REPOSITORY Guide:
+1) Data used to train and test the classifiers can be found at MushroomDataset/secondary_data.csv.
+2) To instantiate and populate a NoSQL database using MongoDB and Pymongo, run populate_db.py.
+3) Preprocessing, training and evaluation of the KNN model is stored in Model_training/KNN_model.ipynb.
+4)  Preprocessing, training and evaluation of the Random Forest model is stored in Model_Training/RandomForest_model.ipynb.
+
+---
+
 PROJECT OVERVIEW
-This repository contains a Supervised Machine Learning solution utilizing the "Secondary Mushroom" dataset to classify mushrooms into an edible or poisonous classification.  
+
+Objective: train machine learning models to classify mushrooms as either poisonous or edible.
+
+The project utilized both K-nearest neighbor (KNN) and Random Forest algorithms for classification.
 
 ---
 
 DATASET 
 
-The analysis uses a dataset of  61,069 rows of simulated mushroom data. This data set was obtained from UC Irving (https://archive.ics.uci.edu/dataset/848/secondary+mushroom+dataset). The dataset includes metadata columns such as:
-  *cap-diameter
-  *cap-shape
-  *does-bruise-bleed
-  *gill-attachment
-  *gill-spacing
-  *gill-color
-  *stem-height
-  *stem_width
-  *stem-root
-  *stem-surface
-  *stem-color
-  *veil-type
-  *veil-color
-  *has-ring
-  *ring-type
-  *spore-print-color
-  *habitat
-  *seasons
-
----
-
-REPOSITORY STRUCTURE
-
-
+This dataset includes 61069 hypothetical mushrooms with caps based on 173 species (353 mushrooms
+per species). This dataset was created by D. Wagner, D. Heider and G. Hattab, and obtained from UC Irvine's Machine Learning Repository (https://archive.ics.uci.edu/dataset/848/secondary+mushroom+dataset). The dataset includes metadata columns such as:
+  * cap-diameter
+  * cap-shape
+  * does-bruise-bleed
+  * gill-attachment
+  * gill-spacing
+  * gill-color
+  * stem-height
 
 
 
@@ -41,37 +36,40 @@ REPOSITORY STRUCTURE
 
 METHODOLOGY
 
-The project follows these key steps:
+The project follows these key steps (Note: the preprocessing, model training and evaluation follows the same steps for both the KNN and Random Forest models):
+1. Create and populate a noSQL database, using MongoDB and Pymongo
+2. Generate data frame with all records from database.
+3. Remove al columns with empty values.
+4. Split the data into training and testing batches.
+5. Scale the training and test features.
+6. Train the model using scaled training batch.
+7. Generate predictions using the test batch.
+8. Evaluate the model, looking at accuracy, precision and recall.
+9. Return to the preprocessing stage to optimize the training data.
+10. Starting with the complete raw data, fill all empty values (in all columns) with 'n/a' string value, to create a new distinct categorical value. No columns are dropped.
+11. Repeat steps 4 to 8. 
 
-1. DATA MODEL IMPLEMENTATION
-   *A Python script initializes, trains, and evaluates a model
-   *The data is cleaned, normalized, and standardized prior to modeling
-   *The model utilizes data retrieved from SQL or Spark
-   *The model demonstrates meaningful predictive power at least 75% classification accuracy or 0.80 R-squared.
 
-2. DATA MODEL OPTIMIZATION
-   *The model optimization and evaluation process showing iterative changes made to the model and the resulting changes in model performance is documented in either a CSV/Excel table or in the Python script itself
-   *Overall model performance is printed or displayed at the end of the script
    
 ---
 
 RESULTS
 
+Training of both the KNN and Random Forest classifiers was successful.
 
+* The KNN model was trained to achieve: 0.999 accuracy, 0.999 recall and 0.999 precision.
+* The Random Forest model was able to achieve: 1.0 accuracy, 1.0 recall and 1.0 precision.
 
 
 ---
 
 TECHNOLOGIES USED
-  *Python
-  *Pandas
-  *SKLearn
-  *Random Forest Classifier
-  *K-Nearest Neighbor 
-  *Jupyter Notebook
-  *MongoDB
-  *NoSQL
-  ---
+  * Python
+  * Pandas
+  * SKLearn: Random Forest Classifier
+  * SKLearn: K-Nearest Neighbor 
+  * Jupyter Notebook
+* MongoDB
 
-  CONCLUSIONS
+
   
