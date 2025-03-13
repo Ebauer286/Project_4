@@ -2,6 +2,10 @@ PROJECT 4 - EDIBLE VS POISONOUS MUSHROOM CLASSIFICATION
 
 ---
 
+REPOSITORY Guide:
+
+---
+
 PROJECT OVERVIEW
 
 Objective: train a machine learning model to classify mushrooms as either poisonous or edible.
@@ -21,14 +25,6 @@ per species). This dataset was created by D. Wagner, D. Heider and G. Hattab, an
   * gill-spacing
   * gill-color
   * stem-height
-
-
----
-
-REPOSITORY Guide:
-
-
-
 
 
 
@@ -52,7 +48,10 @@ The project follows these key steps:
 
 RESULTS
 
+Training of both the KNN and Random Forest classifiers was successful.
 
+* The KNN model was trained to achieve: 0.999 accuracy, 0.999 recall and 0.999 precision.
+* The Random Forest model was able to achieve: 1.0 accuracy, 1.0 recall and 1.0 precision.
 
 
 ---
@@ -67,5 +66,5 @@ TECHNOLOGIES USED
 
   ---
 
-  CONCLUSIONS
+
   
