@@ -71,7 +71,5 @@ TECHNOLOGIES USED
   * Jupyter Notebook
 * MongoDB
 
-  ---
-
 
   
